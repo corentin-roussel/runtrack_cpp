@@ -1,4 +1,5 @@
 #include "../header/Pingouin.hpp"
+#include "Pingouin.hpp"
 
 
 Pingouin::Pingouin(double vitesseNage, double vitesseMarche, std::string nom) : Aquatique(vitesseNage), Terrestre(vitesseMarche), nom_(nom)
@@ -20,5 +21,4 @@ void Pingouin::marcher()
 {
     std::cout << "Je marche à une vitesse de pingouin de " << vitesseMarche_ << " m/s." << std::endl;
 }
-
 
