@@ -6,12 +6,13 @@
 class Aquatique
 {
 private:
-    double vitesseNage_;
+    double vitesseNage_ = 0;
 public:
+    Aquatique(){};
     Aquatique(double vitesseNage);
     virtual void nager();
-
-    double getVitesseNage() { return vitesseNage_; }
+    double getVitesseNage() { return vitesseNage_; };
+    double setVitesseNage(double vitesseNage) { return vitesseNage_ = vitesseNage; };
 };
 
 
