@@ -13,8 +13,9 @@ using std::vector, std::shared_ptr;
 class Pingouin : public Aquatique, public Terrestre
 {
 private:
-    double vitesseDeGlisse_ = 0;
+    double vitesseDeGlisse_ = 0.00;
     std::string nom_ = " ";
+    double time_ = 0.00;
     static vector<shared_ptr<Pingouin>> pingouins;
 public:
     Pingouin(double vitesseNage, double vitesseMarche, std::string nom, double vitesseDeGlisse);
@@ -29,11 +30,16 @@ public:
     void marcher() override;
     void glisse();
     void static nombrePingouins();
+    void courseTime();
+    void static displayTime();
 
 
     //GETTERS & SETTERS
     double getVitesseDeGlisse() { return vitesseDeGlisse_; };
-    double setVitesseDeGlisse(double vitesseDeGlisse)  { return vitesseDeGlisse_ = vitesseDeGlisse; };
+    void setVitesseDeGlisse(double vitesseDeGlisse)  { vitesseDeGlisse_ = vitesseDeGlisse; };
+
+    double getTime() { return time_; };
+    void setTime(double time) { time_ = time; };
 };
 
 #endif

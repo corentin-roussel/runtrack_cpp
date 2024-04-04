@@ -5,21 +5,28 @@
 int main()
 {
     {
-        Pingouin pingouin(10.50, 15.50, "Pingoo", 10.50);
+        Pingouin pingouin(2.00, 1.50, "Pingoo", 4.00);
 
         pingouin.presenter();
         pingouin.marcher();
         pingouin.nager();
         pingouin.glisse();
 
-        Pingouin pingoo(5.50, 20.50, "Pingoo2", 17.45);
+        Pingouin pingoo(3.00, 1.00, "Pingoo2", 3.50);
         pingoo.presenter();
         pingoo.nager();
         pingoo.marcher();
         pingoo.glisse();
 
-        Pingouin::nombrePingouins();
+        Pingouin pinguin(4.00, 0.20, "Pingoo3", 3.75);
+        pinguin.presenter();
+        pinguin.nager();
+        pinguin.marcher();
+        pinguin.glisse();
+
+        Pingouin::displayTime();
+       
     }
 
-    Pingouin::nombrePingouins();
+
 }
