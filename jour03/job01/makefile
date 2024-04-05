@@ -3,7 +3,7 @@ EXEC = app
 CFLAGS = -Wall -Werror -Wextra -g3
 OBJDIR = obj/
 SRCDIR = src/
-SRC = main.cpp Aquatique.cpp Pingouin.cpp Terrestre.cpp
+SRC = main.cpp vector.cpp
 SRCS = $(addprefix $(SRCDIR), $(SRC))
 OBJ = $(SRCS:$(SRCDIR)%.c=$(OBJDIR)%.o)
 

@@ -1,7 +1,7 @@
 #ifndef VECTOR
 #define VECTOR
 
-#include "../src/main.cpp"
+#include "main.hpp"
 #include <cmath>
 
 class vector
@@ -41,7 +41,7 @@ public:
     void setX(double x) { x_ = x; }
 
     double getY() { return y_ ;}
-    void setX(double y) { y_ = y; }
+    void setY(double y) { y_ = y; }
 
 };
 
